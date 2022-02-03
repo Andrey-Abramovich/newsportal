@@ -1,0 +1,10 @@
+python manage.py shell
+from news.models import *
+u1 = User.objects.create_user(username = 'Andrey')
+u2 = User.objects.create_user(username = 'Milana')
+Author.objects.create(authorUser = u1)
+Author.objects.create(authorUser = u2)
+Category.objects.create(name = 'Sport')
+Category.objects.create(name = 'Criminal')
+Category.objects.create(name = 'Weather')
+Category.objects.create(name = 'Poetry')
