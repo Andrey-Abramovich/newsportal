@@ -17,6 +17,7 @@ class Author(models.Model):
         upCom += upd_comment_rating.get('Commentrating')
 
         self.ratingauthor = upd_ratingpost * 3 + upd_comment_rating
+        self.save()
 
 
 class Category(models.Model):
