@@ -1,10 +1,82 @@
 python manage.py shell
 from news.models import *
+
+#создаем пользователей
 u1 = User.objects.create_user(username = 'Andrey')
 u2 = User.objects.create_user(username = 'Milana')
+
+#создаем авторов
 Author.objects.create(authorUser = u1)
 Author.objects.create(authorUser = u2)
-Category.objects.create(name = 'Sport')
+
+#создаем категории
+Category.objects.create(name = 'Planet')
 Category.objects.create(name = 'Criminal')
 Category.objects.create(name = 'Weather')
 Category.objects.create(name = 'Poetry')
+
+#назначаем переменные для авторов
+author_1 = Author.objects.get(id=1)
+author_2 = Author.objects.get(id=2)
+
+#создаем статьи и новости (можно ли текст импортировать из другого файла? не получилось. хотя делал файл .txt, надо было .py)
+Post.objects.create(author=author_1, category_choices='NW', title='Удар молнии', content='Вчера в Спалдинге во время грозы 15-летний разнорабочий Уильям Бриз был убит на месте ударом молнии.
+')
+Post.objects.create(author=author_2, category_choices='NW', title='В театре обнаружен труп мужчины', content='Капельдинер театра обнаружил тело человека, убитого во время последнего сеанса.')
+Post.objects.create(author=author_1, category_choices='AR', title='Биоразнообразие морских обитателей', content='Океан покрывает около 70 процентов поверхности Земли.')
+Post.objects.create(author=author_2, category_choices='AR', title='Бродскому', content='Выйди из комнаты, сделай ошибку. Хлопни дверями с нахальной улыбкой. Стулом о стену и сразу в окно. Все запрещенное разрешено.')
+
+#присваиваем статьям категории
+Post.objects.get(id=1).postCategory.add(Category.objects.get(id=3))
+Post.objects.get(id=2).postCategory.add(Category.objects.get(id=2))
+Post.objects.get(id=3).postCategory.add(Category.objects.get(id=1))
+Post.objects.get(id=4).postCategory.add(Category.objects.get(id=4))
+
+#даем коментарии и ставим лайки/дизлайки
+Comment.objects.create(comment_post=Post.objects.get(id=1), comment_User=author_1.authorUser, comment='не интересно')
+Comment.objects.get(id=1).dizlike()
+Comment.objects.create(comment_post=Post.objects.get(id=2), comment_User=author_2.authorUser, comment='точно наркоманы')
+Comment.objects.get(id=2).like()
+Comment.objects.get(id=2).like()
+Comment.objects.create(comment_post=Post.objects.get(id=2), comment_User=author_2.authorUser, comment='Призрак оперы убил')
+Comment.objects.create(comment_post=Post.objects.get(id=3), comment_User=author_1.authorUser, comment='Много воды')
+Comment.objects.get(id=4).like()
+Comment.objects.create(comment_post=Post.objects.get(id=4), comment_User=author_2.authorUser, comment='Сильно!')
+Comment.objects.get(id=5).like()
+Comment.objects.create(comment_post=Post.objects.get(id=4), comment_User=author_2.authorUser, comment='где-то слышал.списала.')
+Comment.objects.get(id=6).dizlike()
+
+#лайки/дизлайки статьям
+Post.objects.get(id=1).dizlike()
+Post.objects.get(id=2).like()
+Post.objects.get(id=2).like()
+Post.objects.get(id=3).like()
+Post.objects.get(id=4).like()
+Post.objects.get(id=4).like()
+Post.objects.get(id=4).like()
+
+#обновляем рейтинг авторов
+author_1.update_rating()
+author_1.ratingauthor
+author_2.update_rating()
+author_2.ratingauthor
+
+#находим лучшего автора и выводим имя и рейтинг
+a = Author.objects.order_by('-ratingauthor')[:1]
+a[0].authorUser
+a[0].ratingauthor
+
+#находим лучшую статью и выводим информацию
+p=Post.objects.order_by('-ratingpost')[:1]
+for i in p:
+    i.dateCreation
+    i.author.authorUser
+    i.ratingpost
+    i.title
+    i.Preview()
+
+#все комментарии к лучшей статье (лучшую узнали выше и в ней id, другими путями получаем сперва QuerySet объект, у которого нет атрибута comment_set. через индексы вроде дольше получается)
+c=Post.objects.get(id=4).comment_set.all()
+for i in c:
+    i.comment
+

@@ -16,7 +16,7 @@ class Author(models.Model):
         upCom = 0
         upCom += upd_comment_rating.get('Commentrating')
 
-        self.ratingauthor = upd_ratingpost * 3 + upd_comment_rating
+        self.ratingauthor = upRat * 3 + upCom
         self.save()
 
 
@@ -38,7 +38,7 @@ class Post(models.Model):
     dateCreation = models.DateTimeField(auto_now_add=True)
     postCategory = models.ManyToManyField(Category, through='PostCategory')
     title = models.CharField(max_length=128)
-    content = models.TextField
+    content = models.TextField()
     ratingpost = models.IntegerField(default=0)
 
     def like(self):
