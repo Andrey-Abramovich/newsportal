@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+
+{% for x in posts%}
+<center><p>{{ x }}</p></center>
+<center><p>{{  x.dateCreation  }}</p></center>
+<p>{{ x.content | truncatechars:50 }}</p>
+<!--<a href="{{ post.get_absolute_url }}">Читать далее</a>-->
+<a href="{% url 'detail' id=x.id %}">Читать далее</a>
+<hr />
+{% endfor%}
+
+{% block title %}
+{% endblock %}
+
+</body>
+</html>
