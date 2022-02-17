@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>News</title>
-</head>
-<body>
+{% extends 'default.html' %}
+
+{% load custom_filter %}
+
+{% block title %}
 
 {% for x in posts%}
 <center><p>{{ x }}</p></center>
@@ -15,8 +13,6 @@
 <hr />
 {% endfor%}
 
-{% block title %}
+
 {% endblock %}
 
-</body>
-</html>
