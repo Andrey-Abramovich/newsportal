@@ -10,7 +10,7 @@
 <center><p>{{ x }}</p></center>
 <center><p>{{  x.dateCreation  }}</p></center>
 <p>{{ x.content | truncatechars:50 }}</p>
-<!--<a href="{{ post.get_absolute_url }}">Читать далее</a>-->
+{# <a href="{{ post.get_absolute_url }}">Читать далее</a> #}
 <a href="{% url 'detail' id=x.id %}">Читать далее</a>
 <hr />
 {% endfor%}
