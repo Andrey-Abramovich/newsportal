@@ -4,13 +4,21 @@
 
 {% block title %} {% endblock %}
 
+
 {% block content %}
+
+<!-- Перед таблицей добавим форму для поиска -->
+<form method="GET">
+    {{ filter.form }} <!-- Форму от фильтров за нас сделает django. А вот кнопку, увы придётся делать самому -->
+    <input type="submit" value="Найти">
+</form>
+
 {% for x in posts%}
 <center><p>{{ x }}</p></center>
-<center><p>{{  x.dateCreation  }}</p></center>
+<center><p>{{  x.dateCreation }}</p></center>
 <p>{{ x.content | truncatechars:50 }}</p>
-{# <a href="{{ post.get_absolute_url }}">Читать далее</a> #}
-<a href="{% url 'detail' id=x.id %}">Читать далее</a>
+ <a href="{{ x.get_absolute_url }}">Читать дальше</a>
+{# <a href="{% url 'detail' id=x.id %}">Читать далее</a> #}
 <hr />
 {% endfor%}
 
