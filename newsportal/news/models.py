@@ -63,7 +63,8 @@ class Post(models.Model):
         return '{}'.format(self.title)
 
     def get_absolute_url(self):
-        return reverse('detail', kwargs= {'id': self.pk})
+        # return reverse('post_create', kwargs= {'id': self.id})
+        return f'/news/{self.id}'
 
 
 class PostCategory(models.Model):
