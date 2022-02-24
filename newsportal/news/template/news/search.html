@@ -3,19 +3,22 @@
 {% load custom_filter %}
 
 {% block title %}
-Post
+postsearch
 {% endblock %}
 
 
 {% block content %}
     <h1>Все новости</h1>
-    <h4>Количество публикаций: {{ posts|length }}</h4>
+    <h4>Количество публикаций: {{ search|length }}</h4>
     <hr>
 
-    {% if posts %}
+    {% if search %}
 
         <!-- Перед таблицей добавим форму для поиска -->
-
+        <form method="GET">
+            {{ filter.form }} <!-- Форму от фильтров за нас сделает django. А вот кнопку, увы придётся делать самому -->
+            <input type="submit" value="Найти">
+        </form>
         <table>
             <thead>
                 <th>
@@ -33,7 +36,7 @@ Post
                     дата публикации
                 </th>
             </thead>
-        {% for post in posts %}
+        {% for post in search %}
             <tr>
                 <td>
                     <a href="{% url 'detail' post.id %}">{{ post.title|title|truncatechars:20 }}</a>
