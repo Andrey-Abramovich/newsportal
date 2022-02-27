@@ -1,4 +1,4 @@
-from django_filters import FilterSet, DateFilter, CharFilter,ModelMultipleChoiceFilter  # импортируем filterset, чем-то напоминающий знакомые дженерики
+from django_filters import FilterSet, DateFilter, CharFilter, ModelMultipleChoiceFilter  # импортируем filterset, чем-то напоминающий знакомые дженерики
 from .models import Post, Author
 from django.forms import DateInput
 import django

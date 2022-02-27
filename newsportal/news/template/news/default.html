@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>NEWS</title>
+        <title>{% block title %}
+                {% endblock title%}</title>
         <!-- Favicon-->
 
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -34,10 +35,10 @@
                            <a class="nav-link" href="/admin/">admin</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/news/">all news</a>
+                           <a class="nav-link" href="/">all news</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/news/search/">search</a>
+                           <a class="nav-link" href="/search/">search</a>
                        </li>
                    </ul>
                </div>

@@ -2,6 +2,8 @@ from .models import Post
 from django.views.generic import ListView, UpdateView, CreateView, DetailView, DeleteView
 from .filters import PostFilter
 from .forms import PostForm
+from django.views.generic import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # def index(request):
@@ -16,7 +18,7 @@ from .forms import PostForm
 
 class Posts(ListView):
     model = Post
-    template_name = 'index.html'
+    template_name = 'news/template/news/index.html'
     context_object_name = 'posts'
     ordering = ['-dateCreation']
     paginate_by = 10
@@ -36,7 +38,7 @@ class Posts(ListView):
 
 class Postsearch(ListView):
     model = Post
-    template_name = 'search.html'
+    template_name = 'news/template/news/search.html'
     context_object_name = 'search'
     ordering = ['-dateCreation']
     paginate_by = 10
@@ -56,19 +58,21 @@ class Postsearch(ListView):
 
 class PostDetailView(DetailView):
     # model = Post
-    template_name = 'detail.html'
+    template_name = 'news/template/news/detail.html'
     queryset = Post.objects.all()
 
 
 class PostCreateView(CreateView):
     # model = Post
-    template_name = 'post_create.html'
+    template_name = 'news/template/news/post_create.html'
     form_class = PostForm
+    success_url = '/'
 
 
 class PostUpdateView(UpdateView):
-    template_name = 'post_create.html'
+    template_name = 'news/template/news/post_create.html'
     form_class = PostForm
+    success_url = '/'
 
     # метод get_object мы используем вместо queryset, чтобы получить информацию об объекте, который мы собираемся редактировать
     def get_object(self, **kwargs):
@@ -77,9 +81,9 @@ class PostUpdateView(UpdateView):
 
 
 class PostDeleteView(DeleteView):
-    template_name = 'post_delete.html'
+    template_name = 'news/template/news/post_delete.html'
     queryset = Post.objects.all()
-    success_url = '/news/'
+    success_url = '/'
 
     # def get_object(self, **kwargs):
     #     id = self.kwargs.get('pk')
