@@ -8,7 +8,11 @@ Post
 
 
 {% block content %}
+
 <h2>Страница авторизованного пользователя {{request.user.username}}</h2>
+{% if is_not_authors %}
+<button> <a href="sign/upgrade/"> Хочу Authors!</a> </button>
+{% endif %}
 <div> Здесь может содержаться персональная информация для каждого пользователя </div>
     <h1>Все новости</h1>
     <h4>Количество публикаций: {{ posts|length }}</h4>
@@ -85,6 +89,7 @@ Post
     {% else %} <!-- Если новостей нет, то говорим, что новостей нет ;) -->
         <h2>Новостей нет!</h2>
     {% endif %}
+
 <button> <a href="sign/logout/">Выйти</a> </button>
 {% endblock content %}
 
