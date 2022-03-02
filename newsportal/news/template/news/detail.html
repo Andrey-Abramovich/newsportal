@@ -2,11 +2,24 @@
 
 {% load custom_filter %}
 
-{% block title %} Post{% endblock %}
+{% block title %} Post {% endblock %}
+
+{% block button_content %}
+
+<li class="nav-item">
+    <a class="nav-link" href="/">страница пользователя</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/news/search/">search</a>
+</li>
+
+{% endblock button_content %}
 
 {% block content %}
 <h1>{{ post.title|censor }}</h1>
 <h2>{{ post.dateCreation | date:'d-M-Y H:i' }}</h2>
 <hr>
 <h3>{{ post.content|censor }}</h3>
+<button> <a href="/news/">Назад</a> </button>
 {% endblock content %}
+

@@ -4,6 +4,17 @@
 Posts
 {% endblock title %}
 
+{% block button_content %}
+
+<li class="nav-item">
+    <a class="nav-link" href="/">страница пользователя</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/news/search/">search</a>
+</li>
+
+{% endblock button_content %}
+
 {% block content %}
 <h3>Информация о посте</h3>
 <form method="POST">
@@ -11,4 +22,7 @@ Posts
     {{ form }} <!-- Теперь нам нужна только готовая форма и кнопка -->
     <input type="submit" value="Добавить пост">
 </form>
+<p>
+    <button> <a href="/news/">Назад</a> </button>
+</p>
 {% endblock content %}

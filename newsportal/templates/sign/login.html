@@ -3,6 +3,8 @@
 {% block title %} войдите в систему
 {% endblock title%}
 
+
+
 {% block content %}
 <h2> Войти в систему </h2>
 <form method="post" action="{% url 'login' %}">
@@ -20,5 +22,5 @@
 
 <input type="submit" value="Войти">
 </form>
-<button> <a href="/sign/signup"> Регистрация </a></button>
+<button> <a href="/accounts/login"> войти с помощью Google </a></button>
 {% endblock %}
