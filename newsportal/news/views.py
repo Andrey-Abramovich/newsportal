@@ -1,4 +1,4 @@
-from .models import Post
+from .models import *
 from django.views.generic import ListView, UpdateView, CreateView, DetailView, DeleteView
 from .filters import PostFilter
 from .forms import PostForm

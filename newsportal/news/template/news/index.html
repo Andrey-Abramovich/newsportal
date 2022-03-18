@@ -46,6 +46,11 @@
                 <th>
                     дата публикации
                 </th>
+
+                <th>
+                    категория
+                </th>
+
             </thead>
         {% for post in posts %}
             <tr>
@@ -64,6 +69,13 @@
                 <td>
                     {{ post.dateCreation|date:'d-M-Y H:i' }}
                 </td>
+
+                <td>
+                    {% for category in post.postCategory.all %}
+                    {{ category.name }}
+                    {% endfor%}
+                </td>
+
             </tr>
         {% endfor%}
         </table>
