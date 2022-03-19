@@ -1,5 +1,5 @@
 from django_filters import FilterSet, DateFilter, CharFilter, ModelMultipleChoiceFilter  # импортируем filterset, чем-то напоминающий знакомые дженерики
-from .models import Post, Author
+from .models import *
 from django.forms import DateInput
 import django
 
@@ -21,6 +21,13 @@ class PostFilter(FilterSet):
     label ='Автор:',
     lookup_expr ='exact',
     queryset = Author.objects.all()
+    )
+
+    category = ModelMultipleChoiceFilter('postCategory',
+    label = 'категория',
+    lookup_expr = 'exact',
+    queryset = Category.objects.all()
+
     )
     # Здесь в мета классе надо предоставить модель и указать поля, по которым будет фильтроваться (т. е. подбираться) информация о товарах
 
