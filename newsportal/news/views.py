@@ -36,7 +36,7 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 class Posts(ListView):
     model = Post
 
-    template_name = 'news/template/news/index.html'
+    template_name = 'news/index.html'
     context_object_name = 'posts'
     ordering = ['-dateCreation']
     paginate_by = 10
@@ -56,7 +56,7 @@ class Posts(ListView):
 
 class Postsearch(ListView):
     model = Post
-    template_name = 'news/template/news/search.html'
+    template_name = 'news/search.html'
     context_object_name = 'search'
     ordering = ['-dateCreation']
     paginate_by = 10
@@ -75,13 +75,13 @@ class Postsearch(ListView):
 
 
 class PostDetailView(PermissionRequiredMixin, DetailView):
-    template_name = 'news/template/news/detail.html'
+    template_name = 'news/detail.html'
     queryset = Post.objects.all()
     permission_required = ('news.view_post',)
 
 
 class PostCreateView(PermissionRequiredMixin, CreateView):
-    template_name = 'news/template/news/post_create.html'
+    template_name = 'news/post_create.html'
     form_class = PostForm
     success_url = '/'
     permission_required = ('news.add_post',)
@@ -90,7 +90,7 @@ class PostCreateView(PermissionRequiredMixin, CreateView):
 
 
 class PostUpdateView(PermissionRequiredMixin, UpdateView):
-    template_name = 'news/template/news/post_create.html'
+    template_name = 'news/post_create.html'
     form_class = PostForm
     success_url = '/'
     permission_required = ('news.change_post',)
@@ -102,7 +102,7 @@ class PostUpdateView(PermissionRequiredMixin, UpdateView):
 
 
 class PostDeleteView(PermissionRequiredMixin,DeleteView):
-    template_name = 'news/template/news/post_delete.html'
+    template_name = 'news/post_delete.html'
     queryset = Post.objects.all()
     success_url = '/'
     permission_required = ('news.delete_post',)

@@ -1,10 +1,10 @@
-{% extends 'news/template/news/default.html' %}
+{% extends 'news/default.html' %}
 
 {% block title %}
 Posts
 {% endblock title %}
 
-{% block content %}
+{% block content_ %}
 <h2>Вы действительно хотите удалить данный товар?</h2>
 <table>
     <thead>
@@ -34,4 +34,4 @@ Posts
 <form method="POST">
     {% csrf_token %}
     <input type="submit" value="подтвердить"></form>
-{% endblock content %}
+{% endblock content_ %}

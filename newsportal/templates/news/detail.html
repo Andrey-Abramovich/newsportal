@@ -1,4 +1,4 @@
-{% extends 'news/template/news/default.html' %}
+{% extends 'news/default.html' %}
 
 {% load custom_filter %}
 
@@ -15,11 +15,11 @@
 
 {% endblock button_content %}
 
-{% block content %}
+{% block content_ %}
 <h1>{{ post.title|censor }}</h1>
 <h2>{{ post.dateCreation | date:'d-M-Y H:i' }}</h2>
 <hr>
 <h3>{{ post.content|censor }}</h3>
 <button> <a href="/news/">Назад</a> </button>
-{% endblock content %}
+{% endblock content_ %}
 

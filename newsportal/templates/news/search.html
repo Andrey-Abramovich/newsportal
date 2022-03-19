@@ -1,10 +1,10 @@
-{% extends 'news/template/news/default.html' %}
+{% extends 'news/default.html' %}
 
 {% load custom_filter %}
 
 {% block title %}
-Новости
-{% endblock title%}
+postsearch
+{% endblock %}
 
 {% block button_content %}
 
@@ -17,19 +17,21 @@
 
 {% endblock button_content %}
 
-{% block content %}
 
+
+{% block content_ %}
 <h2> {{request.user.username}}</h2>
-
-<div>  </div>
     <h1>Все новости</h1>
-    <h4>Количество публикаций: {{ posts|length }}</h4>
+    <h4>Количество публикаций: {{ search|length }}</h4>
     <hr>
 
-    {% if posts %}
+    {% if search %}
 
         <!-- Перед таблицей добавим форму для поиска -->
-
+        <form method="GET">
+            {{ filter.form }} <!-- Форму от фильтров за нас сделает django. А вот кнопку, увы придётся делать самому -->
+            <input type="submit" value="Найти">
+        </form>
         <table>
             <thead>
                 <th>
@@ -46,13 +48,8 @@
                 <th>
                     дата публикации
                 </th>
-
-                <th>
-                    категория
-                </th>
-
             </thead>
-        {% for post in posts %}
+        {% for post in search %}
             <tr>
                 <td>
                     <a href="{% url 'detail' post.id %}">{{ post.title|title|truncatechars:20 }}</a>
@@ -69,13 +66,6 @@
                 <td>
                     {{ post.dateCreation|date:'d-M-Y H:i' }}
                 </td>
-
-                <td>
-                    {% for category in post.postCategory.all %}
-                    {{ category.name }}
-                    {% endfor%}
-                </td>
-
             </tr>
         {% endfor%}
         </table>
@@ -110,8 +100,6 @@
         <h2>Новостей нет!</h2>
     {% endif %}
 
-
-
 <Style>
     a.knopka {
   color: #fff; /* цвет текста */
@@ -128,5 +116,5 @@ a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
 <a href="/sign/logout/" class="knopka">Выйти</a>
 
 
-{% endblock content %}
+{% endblock content_ %}
 

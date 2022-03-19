@@ -1,4 +1,4 @@
-{% extends "templates/main.html" %}
+{% extends "main.html" %}
 
 {% block title %}
 
@@ -6,7 +6,7 @@
 
 {% endblock title%}
 
-{% block content %}
+{% block content_ %}
 <h2>Добро пожаловать, {{request.user.username}}!</h2>
 <div> Вы можете смотреть новости. Если Вы хотите изменять или добавлять свои новости, станьте Автором </div>
 
