@@ -23,6 +23,16 @@
 <h2>{{ post.dateCreation | date:'d-M-Y H:i' }}</h2>
 <hr>
 <h3>{{ post.content|censor }}</h3>
+<hr>
+<h4>
+                    {% for category in post.postCategory.all %}
+                    Категория:{{ category.name }}
+</h4>
+<h5>                   хотите быть в курсе всех новостей в этой категории?
+                    <button> <a href="{% url 'category' category.id %}">подпишись</a> </button>
+                    {% endfor%}
+</h5>
+<hr>
 <button> <a href="/news/">Назад</a> </button>
 {% endblock content_ %}
 

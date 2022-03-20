@@ -3,6 +3,8 @@ from django.views.generic import ListView, UpdateView, CreateView, DetailView, D
 from .filters import PostFilter
 from .forms import PostForm
 from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import redirect
 
 
 # def index(request):
@@ -124,15 +126,38 @@ class CategoryDetailView(DetailView):
     template_name = 'news/category_detail.html'
     context_object_name = 'category'
 
-    def get_filter(self):
-        return PostFilter(self.request.GET, queryset=super().get_queryset())
-
-    def get_queryset(self):
-        return self.get_filter().qs
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['filter'] = PostFilter(self.request.GET, queryset=self.get_queryset())
+        us = self.request.user
+        id = self.kwargs.get('pk')
+        sub_user = Category.objects.filter(id=id).values("subscribers__username")
+        context['is_not_subscribe'] = not sub_user.filter(subscribers__username=self.request.user).exists()
+        context['is_subscribe'] = sub_user.filter(subscribers__username=self.request.user).exists()
+        print('user-', sub_user)
+        print('context', context)
+        print("us=", us)
+        print('con+', context['is_not_subscribe'])
+
         return context
 
 
+@login_required
+def subscribe_me(request, pk):
+    sub_user = User.objects.get(id=request.user.pk)
+    print(('us', sub_user))
+    category_object = Category.objects.get(pk=pk)
+    print('cat', category_object)
+    category_object.subscribers.add(sub_user)
+
+    return redirect('/news/')
+
+
+@login_required
+def del_subscribe_me(request, pk):
+    sub_user = User.objects.get(id=request.user.pk)
+    print(('us', sub_user))
+    category_object = Category.objects.get(pk=pk)
+    print('cat', category_object)
+    category_object.subscribers.remove(sub_user)
+
+    return redirect('/news/')

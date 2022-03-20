@@ -2,7 +2,7 @@
 
 {% load custom_filter %}
 
-{% block title %} Category {% endblock %}
+{% block title %} Подтвердите подписку {% endblock %}
 
 {% block button_content %}
 
@@ -19,13 +19,20 @@
 {% endblock button_content %}
 
 {% block content_ %}
-{{ category.name }}
-{% for post in posts %}
-<h1>{{ post.title }}</h1>
+    <h1>{{ category.name }}</h1>
+        <h2>
+            {% for post in posts %}
+                {{ post.title }}
+            {% endfor %}
+        </h2>
 
-{% endfor %}
 <hr>
-<h3></h3>
 
+{% if is_not_subscribe %}
+    <button> <a href="{% url 'subscribe' category.id %}"> подписаться</a> </button>
+{% else %}
+    <button> <a href="{% url 'del_subscribe' category.id %}"> отписаться</a> </button>
+{% endif %}
+<hr>
 <button> <a href="/news/categories/">Назад</a> </button>
 {% endblock content_ %}

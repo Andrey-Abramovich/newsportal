@@ -31,22 +31,20 @@
         <table>
 
         {% for category in categories %}
-            <tr>
+
 
                 <td>
-                    Название категории:
-                    {{ category.name }}
-                    <button> <a href="{% url 'category' category.id %}">просмотреть</a> </button>
+                    <h3> Название категории:
+                        {{ category.name }}
+                    </h3>
+                    <button> <a href="{% url 'category' category.id %}">перейти</a> </button>
 
                 </td>
 
-
-
-            </tr>
         {% endfor%}
         </table>
 
-
+<hr>
 <Style>
     a.knopka {
   color: #fff; /* цвет текста */
