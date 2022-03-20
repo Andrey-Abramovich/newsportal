@@ -109,3 +109,30 @@ class PostDeleteView(PermissionRequiredMixin,DeleteView):
     # def get_object(self, **kwargs):
     #     id = self.kwargs.get('pk')
     #     return Post.objects.get(pk=id)
+
+
+class CategoryView(ListView):
+    model = Category
+    queryset = Category.objects.all()
+    template_name = 'news/categories.html'
+    context_object_name = 'categories'
+
+
+class CategoryDetailView(DetailView):
+    model = Category
+    queryset = Category.objects.all()
+    template_name = 'news/category_detail.html'
+    context_object_name = 'category'
+
+    def get_filter(self):
+        return PostFilter(self.request.GET, queryset=super().get_queryset())
+
+    def get_queryset(self):
+        return self.get_filter().qs
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['filter'] = PostFilter(self.request.GET, queryset=self.get_queryset())
+        return context
+
+

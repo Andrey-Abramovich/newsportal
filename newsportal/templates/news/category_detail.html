@@ -1,8 +1,8 @@
 {% extends 'news/default.html' %}
- 
-{% block title %}
-Posts
-{% endblock title %}
+
+{% load custom_filter %}
+
+{% block title %} Category {% endblock %}
 
 {% block button_content %}
 
@@ -19,13 +19,13 @@ Posts
 {% endblock button_content %}
 
 {% block content_ %}
-<h3>Информация о посте</h3>
-<form method="POST">
-    {% csrf_token %}
-    {{ form }} <!-- Теперь нам нужна только готовая форма и кнопка -->
-    <input type="submit" value="Добавить пост">
-</form>
-<p>
-    <button> <a href="/news/">Назад</a> </button>
-</p>
+{{ category.name }}
+{% for post in posts %}
+<h1>{{ post.title }}</h1>
+
+{% endfor %}
+<hr>
+<h3></h3>
+
+<button> <a href="/news/categories/">Назад</a> </button>
 {% endblock content_ %}

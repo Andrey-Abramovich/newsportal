@@ -1,0 +1,67 @@
+{% extends 'news/default.html' %}
+
+{% load custom_filter %}
+
+{% block title %}
+Категории
+{% endblock title%}
+
+{% block button_content %}
+
+<li class="nav-item">
+    <a class="nav-link" href="/">страница пользователя</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/news/search/">поиск</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/news/categories/">подписаться</a>
+</li>
+
+{% endblock button_content %}
+
+{% block content_ %}
+
+<h2> {{request.user.username}}</h2>
+
+<div>  </div>
+
+    <hr>
+
+        <table>
+
+        {% for category in categories %}
+            <tr>
+
+                <td>
+                    Название категории:
+                    {{ category.name }}
+                    <button> <a href="{% url 'category' category.id %}">просмотреть</a> </button>
+
+                </td>
+
+
+
+            </tr>
+        {% endfor%}
+        </table>
+
+
+<Style>
+    a.knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .5em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+</Style>
+<p></p>
+<a href="/sign/logout/" class="knopka">Выйти</a>
+
+
+{% endblock content_ %}
+
