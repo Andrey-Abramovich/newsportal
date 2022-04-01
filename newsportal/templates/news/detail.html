@@ -27,11 +27,13 @@
 <h4>
                     {% for category in post.postCategory.all %}
                     Категория:{{ category.name }}
-</h4>
-<h5>                   хотите быть в курсе всех новостей в этой категории?
+
+<h5>
+                    хотите быть в курсе всех новостей в этой категории?
                     <button> <a href="{% url 'category' category.id %}">подпишись</a> </button>
-                    {% endfor%}
 </h5>
+                    {% endfor%}
+</h4>
 <hr>
 <button> <a href="/news/">Назад</a> </button>
 {% endblock content_ %}
