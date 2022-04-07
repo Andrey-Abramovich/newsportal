@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'protect',
+    'django_apscheduler',
 ]
 
 SITE_ID = 1
@@ -169,4 +170,9 @@ EMAIL_HOST_PASSWORD = 'Djangopwd'  # пароль от почты
 EMAIL_USE_SSL = True  # Яндекс использует ssl, подробнее о том, что это, почитайте в дополнительных источниках, но включать его здесь обязательно
 SERVER_EMAIL = 'andrey-abtest@yandex.ru'
 DEFAULT_FROM_EMAIL = 'andrey-abtest@yandex.ru'  # здесь указываем уже свою ПОЛНУЮ почту, с которой будут отправляться письма
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #  просмотр отправленных писем из консоли
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
 
