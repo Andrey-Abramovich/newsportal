@@ -8,16 +8,16 @@ class NewsConfig(AppConfig):
     def ready(self):
         import news.signals
 
-        from .tasks import send_week_mail
-        from .scheduler import news_sheduler
-        print('started')
-
-        news_sheduler.add_job(
-            id='send_week_mail',
-            func=send_week_mail,
-            trigger='interval',
-            seconds=5,
-        )
-
-        news_sheduler.start()
+        # from .tasks import send_week_mail
+        # from .scheduler import news_sheduler
+        # print('started')
+        #
+        # news_sheduler.add_job(
+        #     id='send_week_mail',
+        #     func=send_week_mail,
+        #     trigger='interval',
+        #     seconds=5,
+        # )
+        #
+        # news_sheduler.start()
 
