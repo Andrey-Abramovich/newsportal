@@ -7,28 +7,26 @@
 {% endblock title%}
 
 {% block button_content %}
-
-<li class="nav-item">
-    <a class="nav-link" href="/">страница пользователя</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="/news/search/">поиск</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="/news/categories/">подписаться</a>
-</li>
-
+    {% load cache %}
+    {% cache 300 button_content %}
+        <li class="nav-item">
+            <a class="nav-link" href="/">страница пользователя</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/news/search/">поиск</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/news/categories/">подписаться</a>
+        </li>
+    {% endcache %}
 {% endblock button_content %}
 
 {% block content_ %}
-
 <h2> {{request.user.username}}</h2>
-
 <div>  </div>
     <h1>Все новости</h1>
     <h4>Количество публикаций: {{ posts|length }}</h4>
     <hr>
-
     {% if posts %}
 
         <!-- Перед таблицей добавим форму для поиска -->

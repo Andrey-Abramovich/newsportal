@@ -93,6 +93,15 @@ AUTHENTICATION_BACKENDS = [
 WSGI_APPLICATION = 'newsportal.wsgi.application'
 
 
+CACHES = {
+    'default': {
+        'TIMEOUT': 60, # добавляем стандартное время ожидания в минуту (по умолчанию это 5 минут — 300 секунд)
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'), # Указываем, куда будем сохранять кэшируемые файлы! Не забываем создать папку cache_files внутри папки с manage.py!
+    }
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 

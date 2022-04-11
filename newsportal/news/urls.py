@@ -1,12 +1,9 @@
 from django.urls import path
 from .views import *
-# from .views import  IndexView
+from django.views.decorators.cache import cache_page
 
 urlpatterns = [
-    # path('', index, name = 'index'),
-    # path('search/<int:pk>', detail, name = 'detail'),
-    path('', Posts.as_view()),
-    # path('', IndexView.as_view()),
+    path('', cache_page(60)(Posts.as_view())),
     path('search/', Postsearch.as_view(), name='search'),
     path('<int:pk>/', PostDetailView.as_view(), name='detail'),
     path('add/', PostCreateView.as_view(), name='post_create'),
@@ -15,7 +12,5 @@ urlpatterns = [
     path('categories/', CategoryView.as_view(), name='categories'),
     path('categories/<int:pk>/', CategoryDetailView.as_view(), name='category'),
     path('categories/subscribe/<int:pk>/', subscribe_me, name='subscribe'),
-    path('categories/delsubscribe/<int:pk>/', del_subscribe_me, name='del_subscribe')
-
-
+    path('categories/delsubscribe/<int:pk>/', del_subscribe_me, name='del_subscribe'),
 ]

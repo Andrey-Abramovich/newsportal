@@ -7,17 +7,18 @@ postsearch
 {% endblock %}
 
 {% block button_content %}
-
-<li class="nav-item">
-    <a class="nav-link" href="/">страница пользователя</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="/news/search/">поиск</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="/news/categories/">подписаться</a>
-</li>
-
+    {% load cache %}
+    {% cache 300 button_content %}
+        <li class="nav-item">
+            <a class="nav-link" href="/">страница пользователя</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/news/search/">поиск</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/news/categories/">подписаться</a>
+        </li>
+    {% endcache %}
 {% endblock button_content %}
 
 

@@ -132,10 +132,10 @@ class CategoryDetailView(DetailView):
         sub_user = Category.objects.filter(id=id).values("subscribers__username")
         context['is_not_subscribe'] = not sub_user.filter(subscribers__username=self.request.user).exists()
         context['is_subscribe'] = sub_user.filter(subscribers__username=self.request.user).exists()
-        print('user-', sub_user)
-        print('context', context)
-        print("us=", us)
-        print('con+', context['is_not_subscribe'])
+        # print('user-', sub_user)
+        # print('context', context)
+        # print("us=", us)
+        # print('con+', context['is_not_subscribe'])
 
         return context
 
