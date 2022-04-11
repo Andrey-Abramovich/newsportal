@@ -20,4 +20,3 @@ class NewsConfig(AppConfig):
         # )
         #
         # news_sheduler.start()
-

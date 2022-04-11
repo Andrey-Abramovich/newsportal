@@ -1,4 +1,4 @@
-
+from celery import shared_task
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from .models import Post, Category
@@ -7,6 +7,7 @@ from django.utils import timezone
 # from django.contrib.sites.shortcuts import get_current_site
 
 
+@shared_task
 def send_week_mail(url=None):
     for category in Category.objects.all():
         subscribers = category.subscribers.all()

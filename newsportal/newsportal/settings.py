@@ -171,7 +171,7 @@ EMAIL_USE_SSL = True  # Яндекс использует ssl, подробне�
 SERVER_EMAIL = 'andrey-abtest@yandex.ru'
 DEFAULT_FROM_EMAIL = 'andrey-abtest@yandex.ru'  # здесь указываем уже свою ПОЛНУЮ почту, с которой будут отправляться письма
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #  просмотр отправленных писем из консоли
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #  просмотр отправленных писем из консоли
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds

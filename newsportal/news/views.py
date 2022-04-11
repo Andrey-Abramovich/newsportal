@@ -5,6 +5,7 @@ from .forms import PostForm
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
+from .signals import notify_post
 
 
 # def index(request):
@@ -87,8 +88,6 @@ class PostCreateView(PermissionRequiredMixin, CreateView):
     form_class = PostForm
     success_url = '/'
     permission_required = ('news.add_post',)
-
-
 
 
 class PostUpdateView(PermissionRequiredMixin, UpdateView):
