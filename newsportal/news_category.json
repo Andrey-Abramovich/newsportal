@@ -1,0 +1,40 @@
+[
+{
+  "model": "news.category",
+  "pk": 1,
+  "fields": {
+    "name": "Planet",
+    "subscribers": [
+      5
+    ]
+  }
+},
+{
+  "model": "news.category",
+  "pk": 2,
+  "fields": {
+    "name": "Criminal",
+    "subscribers": []
+  }
+},
+{
+  "model": "news.category",
+  "pk": 3,
+  "fields": {
+    "name": "Weather",
+    "subscribers": [
+      25
+    ]
+  }
+},
+{
+  "model": "news.category",
+  "pk": 4,
+  "fields": {
+    "name": "Culture",
+    "subscribers": [
+      26
+    ]
+  }
+}
+]

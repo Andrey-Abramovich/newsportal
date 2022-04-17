@@ -1,0 +1,2616 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-02-14T09:42:07.111Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "В театре обнаружен труп мужчины",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-02-14T09:55:58.884Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "В театре обнаружен труп мужчины",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-02-14T09:56:31.502Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "В театре обнаружен труп мужчины",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-02-14T17:06:29.977Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "В театре обнаружен труп мужчины",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-02-18T17:53:58.575Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Ураган в Беларуси.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-02-18T17:54:21.285Z",
+    "user": 3,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Weather",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Post across\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-02-18T17:55:27.792Z",
+    "user": 3,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "опять?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-02-18T18:48:12.253Z",
+    "user": 3,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Weather",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Post across\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-02-20T14:13:31.627Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Минобороны сообщило о ранении военнослужащего Гродненского гарнизона",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"Ratingpost\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-02-20T14:14:08.258Z",
+    "user": 3,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Criminal",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-02-20T14:38:12.077Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Culture",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-02-20T18:37:27.037Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "dfg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-02-23T18:20:31.515Z",
+    "user": 3,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "жесть",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-02-23T18:25:25.972Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "Стихотворение",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-02-28T10:24:56.115Z",
+    "user": 3,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "127.0.0.1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-02-28T10:27:47.035Z",
+    "user": 3,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "Google",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-02-28T11:14:04.413Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "authors",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-02-28T11:15:40.224Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "common",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-02-28T11:16:19.553Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-02-28T11:16:32.873Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Milana",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-02-28T11:16:55.605Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "andrusshka1984",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-02-28T11:17:12.228Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "qwerty",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-02-28T11:18:36.652Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-02-28T11:18:56.397Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2022-02-28T11:21:19.082Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2022-02-28T11:21:40.134Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2022-02-28T17:30:20.224Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "common",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2022-02-28T17:31:34.294Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "authors",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2022-02-28T17:32:15.063Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2022-02-28T17:32:24.474Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Milana",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2022-02-28T17:32:45.938Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "ilona",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2022-02-28T17:33:21.068Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "8",
+    "object_repr": "test_common_user",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2022-02-28T17:33:31.813Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "test_comon",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2022-02-28T20:08:16.869Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "andrusshka1984",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2022-02-28T20:08:34.355Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "common",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2022-03-02T22:30:48.236Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Andrey",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2022-03-02T22:30:58.594Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "andrusshka1984",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2022-03-02T22:33:16.763Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "16",
+    "object_repr": "hyhy",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2022-03-02T22:33:36.446Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "17",
+    "object_repr": "iuyt",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2022-03-02T22:33:56.059Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "13",
+    "object_repr": "nutl",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2022-03-02T22:34:04.465Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "14",
+    "object_repr": "poiu",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2022-03-02T22:34:22.238Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "15",
+    "object_repr": "sdfg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2022-03-02T22:46:25.108Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "common",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2022-03-20T21:22:54.548Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "9",
+    "object_repr": "anna",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2022-03-20T21:23:09.010Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "test_comon",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2022-03-20T21:23:22.700Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "8",
+    "object_repr": "test_common_user",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2022-03-20T21:23:30.807Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "19",
+    "object_repr": "test2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2022-03-20T21:23:38.350Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "qwerty",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2022-03-20T21:23:48.773Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "12",
+    "object_repr": "lily",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2022-03-20T21:23:56.597Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "18",
+    "object_repr": "juju",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2022-03-20T21:24:06.443Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "ilona",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2022-03-20T21:24:13.975Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "11",
+    "object_repr": "dododo",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2022-03-20T21:24:21.278Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "10",
+    "object_repr": "asdfa",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2022-03-20T21:45:59.563Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "20",
+    "object_repr": "aan_84",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2022-03-20T21:53:51.647Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "21",
+    "object_repr": "aan_84",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2022-04-01T05:40:31.895Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "23",
+    "object_repr": "andrusshka84",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2022-04-01T05:46:13.093Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "24",
+    "object_repr": "andrusshka84",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2022-04-01T06:39:31.452Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "Тектоника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2022-04-01T06:39:37.754Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "25",
+    "object_repr": "Тектоника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2022-04-01T06:39:43.394Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "Тектоника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2022-04-01T06:39:49.256Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "27",
+    "object_repr": "Тектоника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add author",
+    "content_type": 7,
+    "codename": "add_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change author",
+    "content_type": 7,
+    "codename": "change_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete author",
+    "content_type": 7,
+    "codename": "delete_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view author",
+    "content_type": 7,
+    "codename": "view_author"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 9,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 9,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 9,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 9,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add post category",
+    "content_type": 10,
+    "codename": "add_postcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change post category",
+    "content_type": 10,
+    "codename": "change_postcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete post category",
+    "content_type": 10,
+    "codename": "delete_postcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view post category",
+    "content_type": 10,
+    "codename": "view_postcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 11,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 11,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 11,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 11,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 12,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 12,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 12,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 12,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add flat page",
+    "content_type": 13,
+    "codename": "add_flatpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change flat page",
+    "content_type": 13,
+    "codename": "change_flatpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete flat page",
+    "content_type": 13,
+    "codename": "delete_flatpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view flat page",
+    "content_type": 13,
+    "codename": "view_flatpage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add email address",
+    "content_type": 14,
+    "codename": "add_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change email address",
+    "content_type": 14,
+    "codename": "change_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete email address",
+    "content_type": 14,
+    "codename": "delete_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view email address",
+    "content_type": 14,
+    "codename": "view_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add email confirmation",
+    "content_type": 15,
+    "codename": "add_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change email confirmation",
+    "content_type": 15,
+    "codename": "change_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete email confirmation",
+    "content_type": 15,
+    "codename": "delete_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view email confirmation",
+    "content_type": 15,
+    "codename": "view_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add social account",
+    "content_type": 16,
+    "codename": "add_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change social account",
+    "content_type": 16,
+    "codename": "change_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete social account",
+    "content_type": 16,
+    "codename": "delete_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view social account",
+    "content_type": 16,
+    "codename": "view_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add social application",
+    "content_type": 17,
+    "codename": "add_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change social application",
+    "content_type": 17,
+    "codename": "change_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete social application",
+    "content_type": 17,
+    "codename": "delete_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view social application",
+    "content_type": 17,
+    "codename": "view_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add social application token",
+    "content_type": 18,
+    "codename": "add_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change social application token",
+    "content_type": 18,
+    "codename": "change_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete social application token",
+    "content_type": 18,
+    "codename": "delete_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view social application token",
+    "content_type": 18,
+    "codename": "view_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add django job",
+    "content_type": 19,
+    "codename": "add_djangojob"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change django job",
+    "content_type": 19,
+    "codename": "change_djangojob"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete django job",
+    "content_type": 19,
+    "codename": "delete_djangojob"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view django job",
+    "content_type": 19,
+    "codename": "view_djangojob"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add django job execution",
+    "content_type": 20,
+    "codename": "add_djangojobexecution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change django job execution",
+    "content_type": 20,
+    "codename": "change_djangojobexecution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete django job execution",
+    "content_type": 20,
+    "codename": "delete_djangojobexecution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view django job execution",
+    "content_type": 20,
+    "codename": "view_djangojobexecution"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "authors",
+    "permissions": [
+      44,
+      33,
+      34,
+      36,
+      48
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "common",
+    "permissions": [
+      41,
+      36
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$nixruHfFnYVQavEvEhWfKS$zbsroJ2HjhX8fxMaADRtvfd1svd564+Sk12tddxTyq0=",
+    "last_login": "2022-02-28T11:22:46Z",
+    "is_superuser": false,
+    "username": "Andrey",
+    "first_name": "",
+    "last_name": "",
+    "email": "Andrey@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-02-04T15:18:05Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "!4HhcEeuevKhCRKWg0ABmOLgANSPmfbd5xQ4be1Nu",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Milana",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-02-04T15:18:16Z",
+    "groups": [
+      1,
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$euzGM1BqsREMTVISFXLF6i$elnKsbVvrRUzrV438wIF56VudgpSoRoT6+xkISobr5s=",
+    "last_login": "2022-04-08T15:49:34.189Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-02-11T19:38:04.757Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "!79mxYprNoqZyiqFee7cmcT8V0BoOpDRpn9PvXnnb",
+    "last_login": "2022-04-06T13:13:20.194Z",
+    "is_superuser": false,
+    "username": "andrusshka1984",
+    "first_name": "Андрей",
+    "last_name": "А",
+    "email": "andrusshka1984@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-02-28T10:29:14Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$QZiiu7ixRYKGZZ3WDR5Co1$tXwCf4XvAVb+G0K8nG+cnZGRLor2Ky/QCnzuoba6yV8=",
+    "last_login": "2022-03-20T21:55:24.264Z",
+    "is_superuser": false,
+    "username": "aan_84",
+    "first_name": "",
+    "last_name": "",
+    "email": "aan_84@tut.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-03-20T21:54:21.084Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 25,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$skKQs89E4XLl55VqnY9RbD$2fDCBw2yf0leNscYNZot8FpWlzP4JUPeWM6fXM/zqXI=",
+    "last_login": "2022-04-09T16:16:32.830Z",
+    "is_superuser": false,
+    "username": "andrusshka84",
+    "first_name": "",
+    "last_name": "",
+    "email": "andrusshka84@yandex.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-01T05:47:04.413Z",
+    "groups": [
+      1,
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 26,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$1ibRtZCd53DZx7NGDwIqQd$wdroju80ji5BvzymI7HylKMWsgnfiCMtGrl8oXvedUY=",
+    "last_login": "2022-04-01T07:13:02.222Z",
+    "is_superuser": false,
+    "username": "abramovichilona",
+    "first_name": "",
+    "last_name": "",
+    "email": "abramovichilona@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-04-01T07:10:43.701Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "news",
+    "model": "author"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "news",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "news",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "news",
+    "model": "postcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "news",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "flatpages",
+    "model": "flatpage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialapp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "django_apscheduler",
+    "model": "djangojob"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "django_apscheduler",
+    "model": "djangojobexecution"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0n5mw0k33a1tmal30j7qbbr57xhevx57",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nLmxQ:VVRKldzVQWbAMK5H_dM5X2oB29bMZiGXHeGFEP-zy7A",
+    "expire_date": "2022-03-06T14:13:00.449Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8ix3f894znhebzvnyrk20y70rfgcbq53",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nIbkZ:4NORC1pTKq3ecuwMcY42skKQz9C9rTEppa2rkdHu3IM",
+    "expire_date": "2022-02-25T19:38:35.535Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9wb3zkfh76gq659n9czyldnf753leucf",
+  "fields": {
+    "session_data": ".eJxVjLsOAiEQAP-F2hB5LcTS3m8gC7vIqYHkuKuM_25IrtB2ZjJvEXHfatwHr3EhcREgTr8sYX5ym4Ie2O5d5t62dUlyJvKwQ9468et6tH-DiqPObWa2SmFQAULWCX3xBnRhVbzOIViwwDY4ch6Ng3R2npWnAsUaKk6LzxfcxDeS:1nSEH4:Y3wGnbt8humUEWKgUPeuYyAoBTHcRs_aXH5O3_AI3DI",
+    "expire_date": "2022-03-24T08:35:54.580Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9zqww6dscz97d9gjhy0t9293xer2e5yo",
+  "fields": {
+    "session_data": ".eJxVjMEOgyAQRP-Fc2NwhQV7qz9ClmUbSQ0mFU5N_73aeGiP82bmvVSgVufQNnmGnNRVgVWXXxiJH1KOhpblwB0xr63U7rs566277UlKzUw1r2U6X3-qmbZ590RCFqe1v0vEAQwYjNEiUOLeJbBitEk9aoPCwBb04EaJfuwFPfnBqfcH40g8Ew:1ndDlI:pg8eezIKcR0w8u8xmcBmEDf5jms8pzvjXpmBSpeZDxE",
+    "expire_date": "2022-04-23T16:16:32.837Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b5u5tl8du8183okllcdponkbytg5q9to",
+  "fields": {
+    "session_data": ".eJxVjMEOgyAQRP-Fc2NERVpv7Y-QXXY3klJMBHpp-u_VxovHeTPzPgq8X2oq7s1rkMDk-AUhqinVGC_KQS2zq5lXF0hNSmt1ggj-yWlvIMYdN4ev-W-OOjf3LXEqwUMJS3ocr5NqhjxvnuFqWDpha7AFFCE0_magZxpHS5bY-KFvWzaWBtRijcXOd0QopBlR1PcH6DBJvw:1nOmyB:8tdI4FXx3VQrbuHJV2lNd65h__DPDkLZGpShhcRCYDo",
+    "expire_date": "2022-03-14T20:50:11.749Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ifrsl5xcff5t3xvf7ki37uwsyuk30ua7",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nKFLr:k4YMbUY9EZACTfkKpLS7YtHQ9qwGTK2vlSlpopgnCvc",
+    "expire_date": "2022-03-02T08:07:51.705Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iv4jr34ty0359m7yg9qizffz8ox241yh",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nPYDX:p2Pec9NcdkN-l6oumTBkOOSZNLbwd3LWzYD_gcqZzZw",
+    "expire_date": "2022-03-16T23:17:11.817Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m4jenhksqjbvgm44x4ctrqhwrg6gpslp",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nKnLd:flNrOh7Ysv2HLtJAmzASSuozOPBClMnnaGJZodcUZ9s",
+    "expire_date": "2022-03-03T20:25:53.488Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y6x2ybs2ftgl3yckx2vw5y0blxt53ho4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpOYO19q5xADlSnFSIu0OkFNC-mXkvlmBbW9oGLWlCdmaanX63DOVBfQd4h36beZn7ukyZ7wo_6ODXGel5Ody_gwajfesoqnDGmgoRpZQeKGtbInqnQhEeJVIlCWRACVsUhaqNFRaEiiWQduz9AeF-N8o:1nJXrW:mywXAfkDgvQf7GOAGG0KXB2CCSWu9zn6F5eKB_ACumY",
+    "expire_date": "2022-02-28T09:41:38.317Z"
+  }
+},
+{
+  "model": "news.author",
+  "pk": 1,
+  "fields": {
+    "authorUser": 1,
+    "ratingauthor": 0
+  }
+},
+{
+  "model": "news.author",
+  "pk": 2,
+  "fields": {
+    "authorUser": 2,
+    "ratingauthor": 17
+  }
+},
+{
+  "model": "news.author",
+  "pk": 5,
+  "fields": {
+    "authorUser": 25,
+    "ratingauthor": 0
+  }
+},
+{
+  "model": "news.category",
+  "pk": 1,
+  "fields": {
+    "name": "Planet",
+    "subscribers": [
+      5
+    ]
+  }
+},
+{
+  "model": "news.category",
+  "pk": 2,
+  "fields": {
+    "name": "Criminal",
+    "subscribers": []
+  }
+},
+{
+  "model": "news.category",
+  "pk": 3,
+  "fields": {
+    "name": "Weather",
+    "subscribers": [
+      25
+    ]
+  }
+},
+{
+  "model": "news.category",
+  "pk": 4,
+  "fields": {
+    "name": "Culture",
+    "subscribers": [
+      26
+    ]
+  }
+},
+{
+  "model": "news.post",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-04T15:21:14.491Z",
+    "title": "Удар молнии",
+    "content": "Вчера в Спалдинге во время грозы 15-летний разнорабочий Уильям Бриз был убит на месте ударом молнии.",
+    "ratingpost": -1
+  }
+},
+{
+  "model": "news.post",
+  "pk": 2,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-04T15:21:30.962Z",
+    "title": "В театре обнаружен труп мужчины",
+    "content": "Капельдинер театра обнаружил тело человека, убитого во время последнего сеанса.  Пиздец это",
+    "ratingpost": 2
+  }
+},
+{
+  "model": "news.post",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "category_choices": "AR",
+    "dateCreation": "2022-02-04T15:28:28.682Z",
+    "title": "Биоразнообразие морских обитателей",
+    "content": "Океан покрывает около 70 процентов поверхности Земли.",
+    "ratingpost": 1
+  }
+},
+{
+  "model": "news.post",
+  "pk": 4,
+  "fields": {
+    "author": 2,
+    "category_choices": "AR",
+    "dateCreation": "2022-02-04T15:34:25.055Z",
+    "title": "Бродскому",
+    "content": "Выйди из комнаты, сделай ошибку. Хлопни дверями с нахальной улыбкой. Стулом о стену и сразу в окно. Все запрещенное разрешено.пп",
+    "ratingpost": 3
+  }
+},
+{
+  "model": "news.post",
+  "pk": 5,
+  "fields": {
+    "author": 1,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-18T17:53:58.575Z",
+    "title": "Ураган в Беларуси.",
+    "content": "На субботу, 19 февраля, в Беларуси объявлен красный уровень опасности – страну атакует ураган.\r\n\r\nВ Брестской и Гродненской областях при порывах скорость ветра может достигнуть 25 метров в секунду, в Минске – до 24 м/с.",
+    "ratingpost": 5
+  }
+},
+{
+  "model": "news.post",
+  "pk": 6,
+  "fields": {
+    "author": 1,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-20T14:12:31.439Z",
+    "title": "Минобороны сообщило о ранении военнослужащего Гродненского гарнизона",
+    "content": "19 февраля стало известно, что в одной из воинских частей Гродненского гарнизона военнослужащий получил ранение.мсрпт",
+    "ratingpost": 2
+  }
+},
+{
+  "model": "news.post",
+  "pk": 8,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-20T16:41:53.357Z",
+    "title": "В Сети появился первый трейлер сериала \"Властелин колец: Кольца власти\"",
+    "content": "В Сети появился тизер-трейлер сериала \"Властелин Колец: Кольца власти\" (The Lord of the Rings: The Rings of Power), основанного на произведениях Джона Р. Р. Толкина: первая серия выйдет на экраны 2 сентября 2022 года.\r\nПремьера тизера прошла во время финала Супербоула, главного чемпионата по американскому футболу.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 13,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-23T17:20:11.840Z",
+    "title": "Дата выхода фильма «Человек-паук: Нет пути домой»",
+    "content": "«Человек-паук: Нет пути домой», который теперь официально является одним из самых кассовых фильмов всех времен, появится на цифровых платформах в следующем месяце.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 14,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-23T17:32:51.947Z",
+    "title": "Такой погоды не было в Армении 20 лет — синоптики фиксируют новый рекорд",
+    "content": "Сегодня осадков в Армении не ожидается. Помимо этого, температура воздуха в ближайшие дни повысится ещё на 3-5 градусов. Так, в столице Республики ночью будет от 0 до +2, а днём от +13 до +15. Как сообщает Центр гидрометеорологии и мониторинга, такая же погода будет стоять в Лорийской и Армавирской области, а также предгорье Арагацотна и Сюника.\r\n\r\nВ Тавушской, Араратской областях и предгорье Вайоц Дзора будет чуть теплее. В ночное время столбик термометра будет показывать до 3 градусов тепла, а в дневное до +17. Однако самым солнечном регионом сегодня будет долина Сюника, где воздух днём прогреется до +20.\r\n\r\nСиноптики отмечают, что это рекорд с 2020 года. Тогда было зафиксировано лишь 14 градусов тепла. Последний раз температурный рекорд в Армении был побит 19 февраля. Очевидно, что зима в Республике выдалась крайне тёплой.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 15,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-23T18:19:22.325Z",
+    "title": "Загрязнение химическими веществами",
+    "content": "Химическое загрязнение возникает в океане вследствие городской, сельскохозяйственной, промышленной и фармацевтической деятельности. Некоторые из наиболее распространенных видов загрязняющих веществ - это сточные воды(обработанные или необработанные), удобрения, пестициды, нефть и вредные газы, такие как СО2.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 16,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-23T18:23:58.006Z",
+    "title": "Стихотворение",
+    "content": "Время тянет светило к закату.\r\nНо пришло же Велесу на ум\r\nЗа спокойствие взять с меня плату,\r\nИ на суше послышался шум.\r\nЧтоб мне мёрзнуть селёдкой на льдине!\r\nКто такие? Зачем этот дым?\r\nРежет глаз красный зверь в середине.\r\nПахнет деревом, чем-то съестным.\r\n\"Человеки\"... Лягушек спугнули,\r\nЧто-то воют, как стадо телят.\r\nНадо будет стоять в карауле,\r\nЕсли рыб обижать захотят.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 17,
+  "fields": {
+    "author": 1,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-23T18:28:37.840Z",
+    "title": "Вор в законе Степа Мурманский экстрадирован из Португалии в Россию",
+    "content": "Власти Португалии экстрадировали в Россию 58-летнего Степана Фурмана, который известен в криминальном мире как вор в законе Степа Мурманский. Об этом сообщает «МВД Медиа».\r\n\r\nУголовное дело против Фурмана по статье 210.1 УК РФ («Занятие высшего положения в преступной иерархии») было возбуждено в 2019 году. Это первый случай в истории, когда европейская страна выдала России обвиняемого по данной статье.\r\nddd\r\nРанее неоднократно судимый Фурман был объявлен в международный розыск по линии Интерпола на основании запроса УМВД России по Мурманской области. Октябрьский районный суд Мурманска уже выбрал в отношение него меру пресечения в виде заключения под стражу.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 22,
+  "fields": {
+    "author": 1,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-27T17:26:44.448Z",
+    "title": "sdfg",
+    "content": "sdfghsdcfvgbjhjhj",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 23,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-02-27T17:42:50.846Z",
+    "title": "xcvb",
+    "content": "ertyujdfghdsfgbhnmjbvc",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 28,
+  "fields": {
+    "author": 5,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-01T06:29:46.436Z",
+    "title": "Тектоника",
+    "content": "Хотя мы и выделяем пять океанов - Атлантический, Тихий, Индийский, и Южный - на самом деле существует один взаимосвязанный Мировой океан, связанный течениями, обменом энергии, атмосферными и геологическими процессами. Кора Земли, или внешний слой, содержит как континенальную, так и океаническую кору, которые принципиально отличаются по своему составу, плотности и взаимодействию на границах тектонических плит. Плиты могут отодвигаться друг от друга (зона расхождения), сближаться друг с другом (зона сближения) или скользить друг по другу (субдукция). Двумя основными геологическими процессами, влияющими на океан, являются расхождение и сближение.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 29,
+  "fields": {
+    "author": 5,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-01T06:38:43.257Z",
+    "title": "Бонсай пережил ядерный взрыв Хиросимы",
+    "content": "Это деревце знаменито не только своим почтенным возрастом, в 4 века, но и тем, что оно пережило атомный взрыв на Хиросиме.\r\n\r\nСемья, в которой рос этот бонсай, жила в трёх километрах от места, где взорвалась американская бомба в 1945 году. Дереву, как и семье Ямаки удалось пережить эти страшные моменты и остаться в живых.\r\n\r\nПосле случившихся событий дерево переходило из поколения в поколение семейства мастеров бонсай. В 1976 году, Масар Ямаки принял решение передать эту японскую белую сосну в Национальный дендрарий США в Вашингтоне.\r\n\r\nДедушкины тайны привели в замешательство служащих музея:\r\n\r\nИзначально, Ямаки решил умолчать о том, что дерево и вся его семья пострадала от деяний американских военных. Во всем признались его внуки, в 2001 году, во время посещения дендрария и свидания с деревцем.\r\n\r\nЕму конечно далеко до сосны долговечной, которой стукнуло 4862 года, но учитывая обстоятельства, это деревце – настоящий борец за историческую справедливость.\r\n\r\nВ частной беседе, они поведали служителям музея о непростой судьбе дерева, свидетелем каких деяний людей оно стало. Упомянули о счастливой развязке для семьи Ямаки и о множестве несчастных людей, которые не смогли пережить эту страшную бомбардировку и другие боевые действия.\r\n\r\nРеакция на сообщение и попытка скрыть «неудобную» правду от общественности:\r\n\r\nАдминистрация дендрария прониклась этой историей, но решила не открывать тайну японской сосны широким массам. При этом куратор музея Кэтлин Эмерсон-Делл так прониклась этой трогательной историей, что призналась, что находясь рядом с деревом, чувствует присутствие людей, не переживших катастрофу.\r\n\r\nЖенщина отметила, что это деревце помогает прикоснутся к истории.\r\n\r\nВпоследствии, было решено открыть истину. Теперь деревце смело можно назвать символом мира между двумя державами – Японией и США. Символом прощения с толикой стыда. Информация была обнародована на официальном сайте дендрария.\r\n\r\nЭто крохотное деревце получило негласный статус живого памятника людям, погибшим в той страшной бомбардировке. В этом, сделанном человеческими руками аду, не выжила бы даже бессмертная тихоходка, побывавшая в открытом космосе.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 30,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-01T06:57:44.325Z",
+    "title": "В московском регионе продлили \"желтый\" уровень погодной опасности",
+    "content": "МОСКВА, 1 апр - РИА Новости. Гидрометцентр продлил \"желтый\" уровень погодной опасности в Москве и области из-за гололедицы, следует из данных прогностической карты на сайте учреждения.\r\nРанее предупреждение действовало до 22.00 1 апреля.\r\n\"Желтый - погода потенциально опасна\", - говорится в сообщении.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 31,
+  "fields": {
+    "author": 5,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-06T13:14:25.242Z",
+    "title": "Брянский режиссёр Дмитрий Шпиленок завершает съемки фильма о лисах",
+    "content": "Брянский режиссёр Дмитрий Шпиленок продолжает снимать лис. Его проект «Камчатка. Рассказ в лисах» стартовал в марте прошлого года. Финальная экспедиция началась в феврале. Которая продлится 10 месяцев. Основным местом съемок стал Кроноцкий лиман. \r\n\r\nРежиссёр отметил, что это достаточно сложная локация. Он надеется, что в ближайшем времени появится возможность поделиться позитивными новостями из мира дикой природы.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 32,
+  "fields": {
+    "author": 5,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-06T13:17:39.979Z",
+    "title": "Москвичей предупредили о дождливой и пасмурной погоде в выходные",
+    "content": "Облачно, дождливо и теплее нормы ожидается в Москве в выходные, сообщила РИА Новости главный специалист московского Метеобюро Татьяна Позднякова.\r\n\"Выходные в Москве будут не такими тёплыми, как в конце рабочей недели, мы попадём в более прохладную воздушную массу. В субботу и воскресенье будет преобладать облачная погода, днём с редкими прояснениями, минимальная температура в столице будет порядка плюс 1-3 градусов, дневная температура в субботу - плюс 8-10, в воскресенье - на один-два градуса повыше. Но в дневные часы у нас местами небольшой дождь, а ночью временами дождь, то есть дождя будет достаточно\", - рассказала Позднякова.\r\nПо её словам, температура воздуха в выходные дни будет выше климатической нормы на 2-3 градуса, но погода будет довольно дождливой и пасмурной. \"Для кого-то это, может быть, хорошо, а для снега плохо, потому что дожди и высокая температура постараются быстро расправиться со снежным покровом в столичном регионе\", - добавила синоптик.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 34,
+  "fields": {
+    "author": 5,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-08T15:49:10.447Z",
+    "title": "Осадки и порывы ветра до 20 м/с. Какая погода будет в Беларуси 8 апреля",
+    "content": "В пятницу в стране будет облачно с прояснениями. На большей части территории страны пройдут кратковременные осадки: дождь, днем местами с мокрым снегом. В ночные и утренние часы в отдельных районах республики возможен слабый туман. Ветер прогнозируется южный, утром и днем с переходом к западному (5–10 %). Порывы могут достигать 14–20 м/с.\r\n\r\nТемпература воздуха минимальная ночью +4…+9 °С, максимальная днем +8…+13 °С.",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 35,
+  "fields": {
+    "author": 2,
+    "category_choices": "NW",
+    "dateCreation": "2022-04-09T17:50:39.335Z",
+    "title": "Стих",
+    "content": "Мы не хотим стареть, но так стремимся\r\nказаться чуть взрослее для других.\r\nОт детства отреклись, теперь боимся,\r\nвдруг отвернется мир от нас самих.\r\n\r\nТак хочется быть искренне любимым,\r\nНо никому не хочется любить.\r\nМы требуем от друга быть открытым,\r\nНо не даем ему заговорить.\r\n\r\nТак здорово, когда нас уважают, \r\nНо на других нам искренне плевать.\r\nНам нравится, когда нам помогают,\r\nНо сами не стремимся помогать.\r\n\r\nПривычно стало пооливаться грязью,\r\nПлеваться ядом обо всем, на всех,\r\nСегодня модно быть токсичной мразью, \r\nВсех несогласных поднимать на смех.\r\n\r\nЕсть те, кто попытался измениться,\r\nНо мы не ангелы, давно пора понять.\r\nМы были рождены расти, учиться, \r\nНо вряд-ли вдруг научимся летать.\r\n\r\n...",
+    "ratingpost": 0
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 1,
+  "fields": {
+    "post_across": 1,
+    "category_across": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 2,
+  "fields": {
+    "post_across": 2,
+    "category_across": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 3,
+  "fields": {
+    "post_across": 3,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 4,
+  "fields": {
+    "post_across": 4,
+    "category_across": 4
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 5,
+  "fields": {
+    "post_across": 6,
+    "category_across": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 6,
+  "fields": {
+    "post_across": 6,
+    "category_across": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 8,
+  "fields": {
+    "post_across": 8,
+    "category_across": 4
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 12,
+  "fields": {
+    "post_across": 13,
+    "category_across": 4
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 13,
+  "fields": {
+    "post_across": 14,
+    "category_across": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 14,
+  "fields": {
+    "post_across": 15,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 15,
+  "fields": {
+    "post_across": 16,
+    "category_across": 4
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 16,
+  "fields": {
+    "post_across": 17,
+    "category_across": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 21,
+  "fields": {
+    "post_across": 22,
+    "category_across": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 22,
+  "fields": {
+    "post_across": 23,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 23,
+  "fields": {
+    "post_across": 28,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 24,
+  "fields": {
+    "post_across": 29,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 25,
+  "fields": {
+    "post_across": 30,
+    "category_across": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 26,
+  "fields": {
+    "post_across": 31,
+    "category_across": 1
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 27,
+  "fields": {
+    "post_across": 32,
+    "category_across": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 28,
+  "fields": {
+    "post_across": 34,
+    "category_across": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 29,
+  "fields": {
+    "post_across": 35,
+    "category_across": 4
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 1,
+  "fields": {
+    "comment_post": 1,
+    "comment_User": 1,
+    "comment": "не интересно",
+    "comment_time": "2022-02-04T16:12:16.443Z",
+    "comment_rating": -1
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 2,
+  "fields": {
+    "comment_post": 2,
+    "comment_User": 2,
+    "comment": "точно наркоманы",
+    "comment_time": "2022-02-04T16:17:17.574Z",
+    "comment_rating": 2
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 3,
+  "fields": {
+    "comment_post": 2,
+    "comment_User": 2,
+    "comment": "Призрак оперы убил",
+    "comment_time": "2022-02-04T16:19:31.254Z",
+    "comment_rating": 0
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 4,
+  "fields": {
+    "comment_post": 3,
+    "comment_User": 1,
+    "comment": "Много воды",
+    "comment_time": "2022-02-04T16:20:51.852Z",
+    "comment_rating": 1
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 5,
+  "fields": {
+    "comment_post": 4,
+    "comment_User": 2,
+    "comment": "Сильно!",
+    "comment_time": "2022-02-04T16:22:02.680Z",
+    "comment_rating": 1
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 6,
+  "fields": {
+    "comment_post": 4,
+    "comment_User": 2,
+    "comment": "где-то слышал.списала.",
+    "comment_time": "2022-02-04T16:22:51.334Z",
+    "comment_rating": -1
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 7,
+  "fields": {
+    "comment_post": 5,
+    "comment_User": 1,
+    "comment": "опять?",
+    "comment_time": "2022-02-18T17:55:27.792Z",
+    "comment_rating": 4
+  }
+},
+{
+  "model": "news.comment",
+  "pk": 8,
+  "fields": {
+    "comment_post": 5,
+    "comment_User": 2,
+    "comment": "жесть",
+    "comment_time": "2022-02-23T18:20:31.515Z",
+    "comment_rating": 3
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "127.0.0.1",
+    "name": "example.com"
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": 5,
+    "email": "andrusshka1984@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 13,
+  "fields": {
+    "user": 22,
+    "email": "aan_84@tut.by",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 16,
+  "fields": {
+    "user": 25,
+    "email": "andrusshka84@yandex.ru",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 17,
+  "fields": {
+    "user": 26,
+    "email": "abramovichilona@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "provider": "google",
+    "name": "Google",
+    "client_id": "559720394213-3jaqomt1hrbtrke4j6m6261a9fjjguqm.apps.googleusercontent.com",
+    "secret": "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",
+    "key": "",
+    "sites": [
+      1
+    ]
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": 5,
+    "provider": "google",
+    "uid": "118045823764407153986",
+    "last_login": "2022-04-06T13:13:20.134Z",
+    "date_joined": "2022-02-28T10:29:14.204Z",
+    "extra_data": "{\"id\": \"118045823764407153986\", \"email\": \"andrusshka1984@gmail.com\", \"verified_email\": true, \"name\": \"\\u0410\\u043d\\u0434\\u0440\\u0435\\u0439 \\u0410\", \"given_name\": \"\\u0410\\u043d\\u0434\\u0440\\u0435\\u0439\", \"family_name\": \"\\u0410\", \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJz2cRs6gjFKqMQLROr1WwhjpXW6UoeveCqXqtq4=s96-c\", \"locale\": \"ru\"}"
+  }
+},
+{
+  "model": "django_apscheduler.djangojob",
+  "pk": "send_week_mail",
+  "fields": {
+    "next_run_time": "2022-04-08T06:01:50Z",
+    "job_state": "gAWV1wMAAAAAAAB9lCiMB3ZlcnNpb26USwGMAmlklIwOc2VuZF93ZWVrX21haWyUjARmdW5jlIwZbmV3cy50YXNrczpzZW5kX3dlZWtfbWFpbJSMB3RyaWdnZXKUjBlhcHNjaGVkdWxlci50cmlnZ2Vycy5jcm9ulIwLQ3JvblRyaWdnZXKUk5QpgZR9lChoAUsCjAh0aW1lem9uZZSMG3B5dHpfZGVwcmVjYXRpb25fc2hpbS5faW1wbJSMCXdyYXBfem9uZZSTlIwIZGF0ZXRpbWWUjAh0aW1lem9uZZSTlGgQjAl0aW1lZGVsdGGUk5RLAEsASwCHlFKUhZRSlIwDVVRDlIaUUpSMCnN0YXJ0X2RhdGWUTowIZW5kX2RhdGWUTowGZmllbGRzlF2UKIwgYXBzY2hlZHVsZXIudHJpZ2dlcnMuY3Jvbi5maWVsZHOUjAlCYXNlRmllbGSUk5QpgZR9lCiMBG5hbWWUjAR5ZWFylIwKaXNfZGVmYXVsdJSIjAtleHByZXNzaW9uc5RdlIwlYXBzY2hlZHVsZXIudHJpZ2dlcnMuY3Jvbi5leHByZXNzaW9uc5SMDUFsbEV4cHJlc3Npb26Uk5QpgZR9lIwEc3RlcJROc2JhdWJoIIwKTW9udGhGaWVsZJSTlCmBlH2UKGgljAVtb250aJRoJ4hoKF2UaCwpgZR9lGgvTnNiYXViaCCMD0RheU9mTW9udGhGaWVsZJSTlCmBlH2UKGgljANkYXmUaCeIaChdlGgsKYGUfZRoL05zYmF1YmggjAlXZWVrRmllbGSUk5QpgZR9lChoJYwEd2Vla5RoJ4hoKF2UaCwpgZR9lGgvTnNiYXViaCCMDkRheU9mV2Vla0ZpZWxklJOUKYGUfZQoaCWMC2RheV9vZl93ZWVrlGgniGgoXZRoLCmBlH2UaC9Oc2JhdWJoIimBlH2UKGgljARob3VylGgniGgoXZRoLCmBlH2UaC9Oc2JhdWJoIimBlH2UKGgljAZtaW51dGWUaCeIaChdlGgsKYGUfZRoL05zYmF1YmgiKYGUfZQoaCWMBnNlY29uZJRoJ4loKF2UaCwpgZR9lGgvSwpzYmF1YmWMBmppdHRlcpROdWKMCGV4ZWN1dG9ylIwHZGVmYXVsdJSMBGFyZ3OUKYwGa3dhcmdzlH2UaCVoA4wSbWlzZmlyZV9ncmFjZV90aW1llEsBjAhjb2FsZXNjZZSIjA1tYXhfaW5zdGFuY2VzlEsBjA1uZXh0X3J1bl90aW1llGgQjAhkYXRldGltZZSTlEMKB+YECAYBMgAAAJRoG4aUUpR1Lg=="
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 1,
+  "fields": {
+    "job": "send_week_mail",
+    "status": "Executed",
+    "run_time": "2022-04-08T05:38:00Z",
+    "duration": "0.08",
+    "finished": "1649396280.08",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 2,
+  "fields": {
+    "job": "send_week_mail",
+    "status": "Executed",
+    "run_time": "2022-04-08T05:38:10Z",
+    "duration": "0.12",
+    "finished": "1649396290.12",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 3,
+  "fields": {
+    "job": "send_week_mail",
+    "status": "Executed",
+    "run_time": "2022-04-08T05:49:40Z",
+    "duration": "0.08",
+    "finished": "1649396980.08",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 4,
+  "fields": {
+    "job": "send_week_mail",
+    "status": "Executed",
+    "run_time": "2022-04-08T06:01:40Z",
+    "duration": "0.05",
+    "finished": "1649397700.05",
+    "exception": null,
+    "traceback": null
+  }
+}
+]
