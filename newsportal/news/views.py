@@ -156,9 +156,9 @@ class CategoryDetailView(DetailView):
 @login_required
 def subscribe_me(request, pk):
     sub_user = User.objects.get(id=request.user.pk)
-    print(('us', sub_user))
+    # print(('us', sub_user))
     category_object = Category.objects.get(pk=pk)
-    print('cat', category_object)
+    # print('cat', category_object)
     category_object.subscribers.add(sub_user)
 
     return redirect('/news/')
