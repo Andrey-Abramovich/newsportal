@@ -1,0 +1,34 @@
+28-04-2022 18:09:33 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:23:32 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 18:23:33 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:25:02 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/news/urls.py changed, reloading.
+28-04-2022 18:25:03 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:26:38 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 18:26:40 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:27:55 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 18:29:00 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:31:26 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 18:31:27 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:34:05 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 18:42:44 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 18:46:25 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 19:38:44 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 19:40:40 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+28-04-2022 19:40:42 INFO autoreload Watching for file changes with StatReloader
+28-04-2022 19:42:48 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+29-04-2022 13:48:45 INFO autoreload Watching for file changes with StatReloader
+29-04-2022 13:50:13 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+29-04-2022 13:50:14 INFO autoreload Watching for file changes with StatReloader
+29-04-2022 13:51:14 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+29-04-2022 13:51:15 INFO autoreload Watching for file changes with StatReloader
+29-04-2022 13:51:47 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+29-04-2022 13:51:48 INFO autoreload Watching for file changes with StatReloader
+29-04-2022 13:52:05 INFO autoreload /home/andrusshka/PycharmProjects/FPW-52-D2-NewsPortal/newsportal/newsportal/settings.py changed, reloading.
+29-04-2022 13:52:06 INFO autoreload Watching for file changes with StatReloader
+29-04-2022 13:52:10 INFO basehttp "GET /news/search/ HTTP/1.1" 200 12097
+29-04-2022 13:52:15 INFO basehttp "GET /news/categories/ HTTP/1.1" 200 4208
+29-04-2022 13:52:17 INFO basehttp "GET /sign/logout/ HTTP/1.1" 200 2265
+29-04-2022 13:52:18 INFO basehttp "GET /sign/login/ HTTP/1.1" 200 2812
+29-04-2022 13:52:23 INFO basehttp "POST /sign/login/ HTTP/1.1" 302 0
+29-04-2022 13:52:23 INFO basehttp "GET / HTTP/1.1" 200 2554
+29-04-2022 13:52:25 INFO basehttp "GET /news/ HTTP/1.1" 200 12058

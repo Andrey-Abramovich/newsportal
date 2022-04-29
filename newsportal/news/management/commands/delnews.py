@@ -13,7 +13,6 @@ class Command(BaseCommand):
 
         if answer == 'yes':
             try:
-                # category = Category.objects.get(title=options['category'])
                 category_del = Category.objects.get(name=options['category'])
                 Post.objects.filter(postcategory__category_across__name=category_del.name).delete()
                 self.stdout.write(self.style.SUCCESS(

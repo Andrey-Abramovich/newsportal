@@ -7,6 +7,9 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import notify_post
 from django.core.cache import cache
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 # def index(request):
