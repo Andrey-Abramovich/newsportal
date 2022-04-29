@@ -237,7 +237,7 @@ LOGGING = {
     'handlers': {
         'debconsole': {
             'formatter': 'allconsole',
-            'level': 'INFO',
+            'level': 'DEBUG',
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
         },
