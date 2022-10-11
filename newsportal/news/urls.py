@@ -1,6 +1,11 @@
-from django.urls import path
+from django.urls import path, include
 from .views import *
 from django.views.decorators.cache import cache_page
+from rest_framework.routers import SimpleRouter
+
+router = SimpleRouter()
+router.register(r'news', NewsViewSet)
+router.register(r'articles', ArticleViewSet)
 
 urlpatterns = [
     path('', cache_page(60)(Posts.as_view())),
@@ -14,3 +19,5 @@ urlpatterns = [
     path('categories/subscribe/<int:pk>/', subscribe_me, name='subscribe'),
     path('categories/delsubscribe/<int:pk>/', del_subscribe_me, name='del_subscribe'),
 ]
+
+urlpatterns += router.urls

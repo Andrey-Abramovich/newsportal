@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'protect',
     'django_apscheduler',
+    'rest_framework'
 ]
 
 SITE_ID = 1
@@ -56,6 +57,7 @@ SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -112,6 +114,12 @@ DATABASES = {
     }
 }
 
+REST_FRAMEWORK = {
+   'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+   'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+   'PAGE_SIZE': 10  #пагинация для DRF
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -142,6 +150,10 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
 
 
 # Static files (CSS, JavaScript, Images)
@@ -237,7 +249,7 @@ LOGGING = {
     'handlers': {
         'debconsole': {
             'formatter': 'allconsole',
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
         },
@@ -281,11 +293,11 @@ LOGGING = {
         },
     },
     'loggers': {
-        'django': {
-            'handlers': ['infolog', 'debconsole', 'warconsole', 'errconsole'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
+    #     'django': {
+    #         'handlers': ['infolog', 'debconsole', 'warconsole', 'errconsole'],
+    #         'level': 'DEBUG',
+    #         'propagate': True,
+    #     },
         'django.request': {
             'handlers': ['errors', 'mail'],
             'level': 'ERROR',

@@ -5,39 +5,45 @@ from .forms import PostForm
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
+
+from .permissions import IsAuthorOrStaffOrReadOnly
 from .signals import notify_post
 from django.core.cache import cache
 import logging
 
+from .serializers import PostSerializers
+from rest_framework.viewsets import ModelViewSet
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import SearchFilter, OrderingFilter
+
 logger = logging.getLogger(__name__)
 
+class NewsViewSet(ModelViewSet):
+    queryset = Post.objects.filter(category_choices__iexact="NW") # список новостей
+    serializer_class = PostSerializers
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    permission_classes = [IsAuthorOrStaffOrReadOnly]  # доступ для чтения всем, изменять только авторам
+    filterset_fields = ['dateCreation']
+    search_fields = ['title', 'author']
+    ordering_fields = ['author', 'title']
 
-# def index(request):
-#     posts = Post.objects.all()
-#     return render(request, 'index.html', context={'posts': posts})
+    def perform_create(self, serializer):
+        serializer.validated_data['author'] = self.request.user #данные сериалайзера после того, как он прошел валидацию
+        serializer.save()
 
 
-# def detail(request, id):
-#     post = Post.objects.get(id=id)
-#     return render(request, 'detail.html', context={'post': post})
+class ArticleViewSet(ModelViewSet):
+    queryset = Post.objects.filter(category_choices__iexact="AR") # список статей
+    serializer_class = PostSerializers
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    permission_classes = [IsAuthorOrStaffOrReadOnly]  # доступ для чтения всем, изменять только авторам
+    filterset_fields = ['dateCreation']
+    search_fields = ['title', 'author']
+    ordering_fields = ['author', 'title']
 
-# class IndexView(LoginRequiredMixin, TemplateView):
-#     model = Post
-#     template_name = 'news/template/news/index.html'
-#     context_object_name = 'posts'
-#     ordering = ['-dateCreation']
-#     paginate_by = 10
-#
-#     def get_filter(self):
-#         return PostFilter(self.request.GET, queryset=super().get_queryset())
-#
-#     def get_queryset(self):
-#         return self.get_filter().qs
-#
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         context['is_not_authors'] = not self.request.user.groups.filter(name='authors').exists()
-#         return context
+    def perform_create(self, serializer):
+        serializer.validated_data['author'] = self.request.user #данные сериалайзера после того, как он прошел валидацию
+        serializer.save()
 
 
 class Posts(ListView):
@@ -86,7 +92,7 @@ class PostDetailView(PermissionRequiredMixin, DetailView):
     queryset = Post.objects.all()
     permission_required = ('news.view_post',)
 
-    def get_object(self, *args, **kwargs):  # переопределяем метод получения объекта, как ни странно
+    def get_object(self, *args, **kwargs):  # переопределяем метод получения объекта
 
         obj = cache.get(f'post-{self.kwargs["pk"]}',
                         None)  # кэш очень похож на словарь, и метод get действует так же. Он забирает значение по ключу, если его нет, то забирает None.
